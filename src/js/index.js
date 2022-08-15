@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import data from "./data.json";
 import ReactDOM from "react-dom";
+import ToDoList from "./ToDoList";
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
@@ -10,14 +11,17 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-function Todo() {
+function App() {
     const[toDoList, setToDoList] = useState(data);
-    
+
     return (
       <div className="App">
         <Home />
+        <ToDoList toDoList={toDoList}/>
       </div>
     );
    }
 
-export default Todo;
+export default App;
+
+ReactDOM.render(<App />, document.querySelector("#app"));
