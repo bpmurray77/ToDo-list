@@ -9,6 +9,7 @@ import "../styles/index.css";
 
 //import your own components
 import Home from "./component/home.jsx";
+import ToDoForm from './ToDoForm';
 
 //render your react application
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <div className="App">
         <Home />
         <ToDoList toDoList={toDoList}/>
+        <ToDoForm/>
       </div>
     );
    }
