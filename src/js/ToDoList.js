@@ -2,16 +2,16 @@ import React from 'react';
 import ToDo from './ToDo';
  
  
-const ToDoList = ({toDoList}) => {
-   return (
-       <div>
-           {toDoList.map(todo => {
-               return (
-                   <ToDo todo={todo} />
-               )
-           })}
-       </div>
-   );
-};
- 
+const ToDoList = () =>{
+    const taskList = localStorage.getItem("allTasks")
+   console.log(taskList)
+   
+       return(
+
+             <div class="card-body myinventory">
+               {taskList.task}
+             </div>
+           )
+}
+
 export default ToDoList;

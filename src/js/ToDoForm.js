@@ -19,7 +19,7 @@ function ToDoForm() {
 
         console.log(allTasks);
 
-        localStorage.setItem("Inventory", JSON.stringify(allTasks));
+        localStorage.setItem("allTasks", JSON.stringify(allTasks));
       };
     document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("button").addEventListener("click", addToDo)});
@@ -35,7 +35,6 @@ function ToDoForm() {
             name="task"
             id="input"
             type="text"
-            onChange={addToDo}
             ></input>
             <button
             type="submit"

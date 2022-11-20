@@ -13,12 +13,12 @@ import ToDoForm from './ToDoForm';
 
 //render your react application
 function App() {
-    const[toDoList, setToDoList] = useState(data);
+    const[] = useState();
 
     return (
       <div className="App">
         <Home />
-        <ToDoList toDoList={toDoList}/>
+        <ToDoList/>
         <ToDoForm/>
       </div>
     );
