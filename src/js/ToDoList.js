@@ -9,7 +9,7 @@ const ToDoList = () =>{
        return(
 
              <div class="card-body myinventory">
-               {taskList.task}
+               {taskList}
              </div>
            )
 }
